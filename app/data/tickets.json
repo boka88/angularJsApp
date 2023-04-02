@@ -1,0 +1,46 @@
+[{
+	"name": "Yoshi",
+	"belt": "Green",
+	"rate": 50,
+	"avaliable": true,
+	"thumb": "content/images/zlatni.jpg"
+}, {
+	"name": "Crystal",
+	"belt": "Yellow",
+	"rate": 30,
+	"avaliable": true,
+	"thumb": "content/images/obic.jpg"
+}, {
+	"name": "Ryu",
+	"belt": "Orange",
+	"rate": 10,
+	"avaliable": true,
+	"thumb": "content/images/obic.jpg"
+}, {
+	"name": "Shaun",
+	"belt": "Brown",
+	"rate": 1000,
+	"avaliable": true,
+	"thumb": "content/images/zlatni.jpg"
+},
+{
+	"name": "Shaun",
+	"belt": "Brown",
+	"rate": 1000,
+	"avaliable": true,
+	"thumb": "content/images/obic.jpg"
+},
+{
+	"name": "Shaun",
+	"belt": "Brown",
+	"rate": 1000,
+	"avaliable": true,
+	"thumb": "content/images/obic.jpg"
+},
+{
+	"name": "Shaun",
+	"belt": "Brown",
+	"rate": 1000,
+	"avaliable": true,
+	"thumb": "content/images/zlatni.jpg"
+}]

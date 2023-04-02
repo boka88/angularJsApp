@@ -1,15 +1,15 @@
-var myNinjaApp = angular.module('myNinjaApp', ['ngRoute']);
+var myTicketApp = angular.module('myTicketApp', ['ngRoute']);
 
-myNinjaApp.config(['$routeProvider', function($routeProvider) {
+myTicketApp.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
      .when('/home', {
         templateUrl: 'views/home.html',
-        controller: 'NinjaController'
+        controller: 'TicketController'
      })
      .when('/directory', {
         templateUrl: 'views/directory.html',
-        controller: 'NinjaController'
+        controller: 'TicketController'
      })
      .otherwise({
         redirectTo: '/home'
@@ -18,7 +18,7 @@ myNinjaApp.config(['$routeProvider', function($routeProvider) {
      //$routeProvider.errorOnUnhandledRejections(false);
 }]);
 
-myNinjaApp.directive('randomNinja', [function() {
+myTicketApp.directive('randomTicket', [function() {
 
     return {
         restrict: 'E',
@@ -35,32 +35,32 @@ myNinjaApp.directive('randomNinja', [function() {
 
 }]);
 
-myNinjaApp.controller('NinjaController', ['$scope', '$http', function($scope, $http) {
+myTicketApp.controller('TicketController', ['$scope', '$http', function($scope, $http) {
 
-    $scope.removeNinja = function(ninja) {
-        var removedNinja = $scope.ninjas.indexOf(ninja);
-        $scope.ninjas.splice(removedNinja, 1);
+    $scope.removeTicket = function(ticket) {
+        var removedTicket = $scope.tickets.indexOf(ticket);
+        $scope.tickets.splice(removedTicket, 1);
     };
 
-    $scope.addNinja = function() {
-        $scope.ninjas.push({
-            name: $scope.newninja.name,
-            belt: $scope.newninja.belt,
-            rate: parseInt($scope.newninja.rate),
+    $scope.addTicket = function() {
+        $scope.tickets.push({
+            name: $scope.newticket.name,
+            belt: $scope.newticket.belt,
+            rate: parseInt($scope.newticket.rate),
             avaliable: true
         });
 
-        $scope.newninja.name = "";
-        $scope.newninja.belt = "";
-        $scope.newninja.rate = "";
+        $scope.newticket.name = "";
+        $scope.newticket.belt = "";
+        $scope.newticket.rate = "";
 
     };
 
    
-    $http.get('app/data/ninjas.json').then(function(response){
+    $http.get('app/data/tickets.json').then(function(response){
        
-        $scope.ninjas = response.data;
-        console.log('ninjas',$scope.ninjas)
+        $scope.tickets = response.data;
+        console.log('ninjas',$scope.tickets)
     },
     (reason) => {
       console.error(reason); // Error!
