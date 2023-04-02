@@ -3,23 +3,44 @@
 	"belt": "Green",
 	"rate": 50,
 	"avaliable": true,
-	"thumb": "https://www.clipartmax.com/png/middle/132-1324937_big-image-thumb-clipart.png"
+	"thumb": "content/images/boki.jpg"
 }, {
 	"name": "Crystal",
 	"belt": "Yellow",
 	"rate": 30,
 	"avaliable": true,
-	"thumb": "https://www.clipartmax.com/png/middle/132-1324937_big-image-thumb-clipart.png"
+	"thumb": "content/images/milos.jpg"
 }, {
 	"name": "Ryu",
 	"belt": "Orange",
 	"rate": 10,
 	"avaliable": true,
-	"thumb": "https://www.clipartmax.com/png/middle/132-1324937_big-image-thumb-clipart.png"
+	"thumb": "content/images/deki.jpg"
 }, {
 	"name": "Shaun",
 	"belt": "Brown",
 	"rate": 1000,
 	"avaliable": true,
-	"thumb": "https://www.clipartmax.com/png/middle/132-1324937_big-image-thumb-clipart.png"
+	"thumb": "content/images/olja.jpg"
+},
+{
+	"name": "Shaun",
+	"belt": "Brown",
+	"rate": 1000,
+	"avaliable": true,
+	"thumb": "content/images/vosa.jpg"
+},
+{
+	"name": "Shaun",
+	"belt": "Brown",
+	"rate": 1000,
+	"avaliable": true,
+	"thumb": "content/images/maxa.jpg"
+},
+{
+	"name": "Shaun",
+	"belt": "Brown",
+	"rate": 1000,
+	"avaliable": true,
+	"thumb": "content/images/ja.jpg"
 }]
