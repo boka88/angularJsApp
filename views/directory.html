@@ -5,7 +5,7 @@
        <ul>
          <li ng-repeat="ticket in tickets | orderBy: order | filter: search" ng-show="ticket.avaliable" style="height: 150px;margin-bottom: 10px;">
            <img ng-src="{{ticket.thumb}}" style="margin: 0px 10px 0 0; float: left; width: 140px;height: 100px;border-radius: 20px;" ng-show="ticket.thumb" />
-           <h3 style="padding-top: 10px;color:rgb(47, 56, 38);font-style: bold;">{{ticket.name}} - {{ticket.rate | currency: '$'}}</h3>
+           <h3 style="padding-top: 10px;color: #ffbb03;;font-style: bold;">{{ticket.name}} - {{ticket.rate | currency: '$'}}</h3>
            <div class="remove" ng-click="removeTicket(ticket)">x</div>
            <span class="belt" style="background: {{ticket.belt}};">{{ticket.belt}}   ticket</span>
          </li>
